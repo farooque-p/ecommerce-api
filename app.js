@@ -25,4 +25,8 @@ app.use("/api/v1/product", Product);
 app.use("/api/v1/category", Category);
 app.use("/api/v1/order", Order);
 
+app.get("/", (req, res) => {
+  return res.status(200).send("<h1>Welcome To Node server </h1>");
+});
+
 export default app;
